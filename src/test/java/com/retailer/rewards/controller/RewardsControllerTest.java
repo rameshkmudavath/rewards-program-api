@@ -59,6 +59,7 @@ class RewardsControllerTest {
                 .andExpect(status().isBadRequest());
     }
     
+    
     @Test
     @DisplayName("GET /api/rewards/{customerId} - Should return 400 Bad Request with structured JSON when service throws IllegalArgumentException")
     void testGetCustomerRewards_invalidMonthsAdvice() throws Exception {
